@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown Pemrograman Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 text-white flex justify-between items-center shadow-md">
+    <h1 class="font-bold text-lg tracking-wide">Portofolio</h1>
+    <div class="space-x-4 text-sm">
+      <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+      <a href="about.html" class="hover:text-blue-400 transition">About</a>
+      <a href="countdown.html" class="hover:text-blue-400 transition">Countdown</a>
+    </div>
+  </nav>
+
+  <!-- Countdown Section -->
+  <section class="flex-grow flex flex-col items-center justify-center text-center px-4">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-400">
+      Waktu Pembelajaran Pemrograman Web Selesai
+    </h2>
+    <div id="timer"
+      class="text-4xl md:text5xl font-sans font-black uppercase tracking-widest
+             bg-gray-800 text-blue-500 shadow-2xl p-8 rounded-xl border border-gray-700 ring-4 ring-blue-700">
+    </div>
+  </section>
+
+  <script>
+    const targetDate = new Date("Sep 16, 2025 16:00:00").getTime();
+    const timer = document.getElementById("timer");
+
+    setInterval(function () {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        timer.innerHTML = "✅ Pembelajaran Selesai!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+  </script>
+
+</body>
+</html>

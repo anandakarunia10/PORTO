@@ -1,0 +1,176 @@
+```html
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio Saya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4 text-white flex justify-between shadow-md sticky top-0 z-50">
+    <h1 class="font-bold text-lg">Portofolio</h1>
+    <div>
+      <a href="#home" class="px-2 hover:text-gray-400">Home</a>
+      <a href="#about" class="px-2 hover:text-gray-400">About</a>
+      <a href="#projects" class="px-2 hover:text-gray-400">Project</a>
+      <a href="https://marketplace-nantech.vercel.app/" target="_blank" class="px-2 hover:text-gray-400">E-Commerce</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center p-8">
+    <img src="PP NANDA.jpg" alt="Foto Saya" class="mx-auto rounded-full w-40 h-40 shadow-lg border-4 border-gray-700">
+    <h2 class="text-3xl font-bold mt-4 text-white">Gede Ananda Karunia Putra</h2>
+    <p class="text-lg text-gray-400">Web Developer | Mahasiswa | Programmer</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-8 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-center text-white">Tentang Saya</h2>
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <img src="PP NANDA.jpg" alt="Foto Gede" class="w-40 h-40 rounded-full shadow-lg border-4 border-gray-700 object-cover" />
+      <div class="space-y-4">
+        <p class="text-lg text-gray-300 font-semibold">Nama Lengkap: Gede Ananda Karunia Putra</p>
+        <p class="text-lg text-gray-300">Panggilan: Nanda</p>
+        <p class="flex items-center gap-2 text-gray-300">
+          📍 Tempat Tinggal: <a href="https://maps.app.goo.gl/jwXBPNPnV2fX2WAz6" target="_blank" class="text-blue-400 hover:text-blue-600 underline">Panji, Buleleng, Bali (Google Maps)</a>
+        </p>
+        <p class="text-lg text-gray-300">🎂 Tanggal Lahir: 14 Juli 2006 — Denpasar</p>
+        <p class="text-gray-400">
+          Halo! Saya adalah seorang mahasiswa yang tertarik di bidang teknologi, khususnya web development.
+          Saya suka belajar hal baru, mencoba project interaktif, dan membuat desain yang sederhana namun menarik.
+        </p>
+        <p class="text-gray-400">
+          Kedepannya saya ingin fokus ke bidang Frontend Development dan juga memperdalam skill di JavaScript serta framework modern.
+        </p>
+      </div>
+    </div>
+
+    <!-- Riwayat Pendidikan -->
+    <h3 class="text-2xl font-bold mt-10 mb-4 text-center text-white">Riwayat Pendidikan</h3>
+    <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+      <div class="flex items-center gap-3 bg-gray-800 p-4 rounded shadow">
+        👶🏻 <span>Taman Kanak-Kanak Aura Sukma Insani</span>
+      </div>
+      <div class="flex items-center gap-3 bg-gray-800 p-4 rounded shadow">
+        👦🏻 <span>Sekolah Dasar Negeri 1 Banyuasri</span>
+      </div>
+      <div class="flex items-center gap-3 bg-gray-800 p-4 rounded shadow">
+        👧🏻 <span>Sekolah Menengah Pertama Negeri 1 Singaraja</span>
+      </div>
+      <div class="flex items-center gap-3 bg-gray-800 p-4 rounded shadow">
+        👩🏻‍🎓 <span>Sekolah Menengah Atas Negeri 1 Singaraja</span>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <section class="p-8">
+      <h3 class="text-2xl font-semibold mb-4 text-center text-white">Skill</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="bg-gray-800 p-4 rounded shadow text-white">HTML</div>
+        <div class="bg-gray-800 p-4 rounded shadow text-white">CSS</div>
+        <div class="bg-gray-800 p-4 rounded shadow text-white">JavaScript</div>
+        <div class="bg-gray-800 p-4 rounded shadow text-white">TailwindCSS</div>
+      </div>
+    </section>
+
+    <!-- Skill Bar -->
+    <h3 class="text-2xl font-bold mt-10 mb-4 text-center text-white">Skill Detail</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <p class="text-gray-300 mb-1">HTML (40%)</p>
+        <div class="bg-gray-700 h-3 rounded-full">
+          <div class="bg-blue-500 h-3 rounded-full" style="width: 40%"></div>
+        </div>
+      </div>
+      <div>
+        <p class="text-gray-300 mb-1">CSS (40%)</p>
+        <div class="bg-gray-700 h-3 rounded-full">
+          <div class="bg-green-500 h-3 rounded-full" style="width: 40%"></div>
+        </div>
+      </div>
+      <div>
+        <p class="text-gray-300 mb-1">Java (30%)</p>
+        <div class="bg-gray-700 h-3 rounded-full">
+          <div class="bg-yellow-400 h-3 rounded-full" style="width: 30%"></div>
+        </div>
+      </div>
+      <div>
+        <p class="text-gray-300 mb-1">TailwindCSS (30%)</p>
+        <div class="bg-gray-700 h-3 rounded-full">
+          <div class="bg-purple-500 h-3 rounded-full" style="width: 30%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pengalaman, Visi, Hobi, Kontak -->
+<div class="mt-10 space-y-8">
+  <div>
+    <h3 class="text-2xl font-bold mb-2 text-white">Pengalaman</h3>
+    <p class="text-gray-400">
+      Membuat project sederhana berupa <strong class="text-white">Countdown</strong> menggunakan HTML, CSS, dan JavaScript.
+    </p>
+  </div>
+  <div>
+    <h3 class="text-2xl font-bold mb-2 text-white">Visi</h3>
+    <p class="text-gray-400">
+      Sebagai pemula di bidang web development, saya ingin terus belajar dan menguasai teknologi modern untuk menjadi Frontend Developer yang handal.
+    </p>
+  </div>
+  <div>
+    <h3 class="text-2xl font-bold mb-2 text-white">Hobi</h3>
+    <p class="text-gray-400">
+      Saya suka bermain game di waktu luang untuk refreshing dan melatih strategi.
+    </p>
+  </div>
+  <div>
+    <h3 class="text-2xl font-bold mb-2 text-white">Kontak</h3>
+    <div class="flex justify-center space-x-6 mt-4">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/gdananda_/" target="_blank"
+         class="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-600 transition">
+         📸 Instagram
+      </a>
+      <!-- Email -->
+      <a href="mailto:ananda.karunia@student.undiksha.ac.id"
+         class="flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition">
+         📧 Email
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects" class="p-8 text-center">
+  <h3 class="text-2xl font-semibold mb-4 text-white">Project</h3>
+  <p class="mb-4 text-gray-400">Lihat project interaktif saya di bawah ini 👇</p>
+
+  <!-- Countdown Project -->
+  <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6">
+    <h4 class="text-xl font-bold text-white mb-2">Countdown Project</h4>
+    <a href="countdown.html" class="bg-gray-700 text-white px-6 py-2 rounded hover:bg-gray-600">Lihat Project</a>
+  </div>
+
+  <!-- Sekat Visual -->
+  <div class="relative my-8">
+    <div class="w-16 h-1 bg-gray-600 mx-auto rounded-full"></div>
+    <p class="text-gray-500 text-sm mt-2">Project Lainnya</p>
+  </div>
+
+  <!-- E-Commerce Project -->
+  <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+    <h4 class="text-xl font-bold text-white mb-2">E-Commerce Project</h4>
+    <a href="https://marketplace-nantech.vercel.app/" target="_blank"
+       class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-500 flex items-center justify-center gap-2 w-fit mx-auto">
+      🛒 Kunjungi Marketplace
+    </a>
+  </div>
+</section>
