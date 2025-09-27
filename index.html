@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="id">
 <head>
@@ -12,15 +13,28 @@
 <body class="bg-gray-900 text-gray-100 font-sans">
 
   <!-- Navbar -->
-  <nav class="bg-gray-800 p-4 text-white flex justify-between shadow-md sticky top-0 z-50">
+  <nav class="bg-gray-800 p-4 text-white flex justify-between items-center shadow-md sticky top-0 z-50">
     <h1 class="font-bold text-lg">Portofolio</h1>
-    <div>
-      <a href="#home" class="px-2 hover:text-gray-400">Home</a>
-      <a href="#about" class="px-2 hover:text-gray-400">About</a>
-      <a href="#projects" class="px-2 hover:text-gray-400">Project</a>
-      <a href="https://marketplace-nantech.vercel.app/" target="_blank" class="px-2 hover:text-gray-400">E-Commerce</a>
+    <!-- Menu Desktop -->
+    <div class="hidden md:flex space-x-4">
+      <a href="#home" class="hover:text-gray-400">Home</a>
+      <a href="#about" class="hover:text-gray-400">About</a>
+      <a href="#projects" class="hover:text-gray-400">Project</a>
+      <a href="https://marketplace-nantech.vercel.app/" target="_blank" class="hover:text-gray-400">E-Commerce</a>
     </div>
+    <!-- Tombol Hamburger -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      ☰
+    </button>
   </nav>
+
+  <!-- Menu Mobile -->
+  <div id="mobile-menu" class="hidden bg-gray-800 text-white flex flex-col space-y-2 p-4 md:hidden">
+    <a href="#home" class="hover:text-gray-400">Home</a>
+    <a href="#about" class="hover:text-gray-400">About</a>
+    <a href="#projects" class="hover:text-gray-400">Project</a>
+    <a href="https://marketplace-nantech.vercel.app/" target="_blank" class="hover:text-gray-400">E-Commerce</a>
+  </div>
 
   <!-- Hero Section -->
   <section id="home" class="text-center p-8">
@@ -109,68 +123,78 @@
     </div>
 
     <!-- Pengalaman, Visi, Hobi, Kontak -->
-<div class="mt-10 space-y-8">
-  <div>
-    <h3 class="text-2xl font-bold mb-2 text-white">Pengalaman</h3>
-    <p class="text-gray-400">
-      Membuat project sederhana berupa <strong class="text-white">Countdown</strong> menggunakan HTML, CSS, dan JavaScript.
-    </p>
-  </div>
-  <div>
-    <h3 class="text-2xl font-bold mb-2 text-white">Visi</h3>
-    <p class="text-gray-400">
-      Sebagai pemula di bidang web development, saya ingin terus belajar dan menguasai teknologi modern untuk menjadi Frontend Developer yang handal.
-    </p>
-  </div>
-  <div>
-    <h3 class="text-2xl font-bold mb-2 text-white">Hobi</h3>
-    <p class="text-gray-400">
-      Saya suka bermain game di waktu luang untuk refreshing dan melatih strategi.
-    </p>
-  </div>
-  <div>
-    <h3 class="text-2xl font-bold mb-2 text-white">Kontak</h3>
-    <div class="flex justify-center space-x-6 mt-4">
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/gdananda_/" target="_blank"
-         class="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-600 transition">
-         📸 Instagram
-      </a>
-      <!-- Email -->
-      <a href="mailto:ananda.karunia@student.undiksha.ac.id"
-         class="flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition">
-         📧 Email
+    <div class="mt-10 space-y-8">
+      <div>
+        <h3 class="text-2xl font-bold mb-2 text-white">Pengalaman</h3>
+        <p class="text-gray-400">
+          Membuat project sederhana berupa <strong class="text-white">Countdown</strong> menggunakan HTML, CSS, dan JavaScript.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold mb-2 text-white">Visi</h3>
+        <p class="text-gray-400">
+          Sebagai pemula di bidang web development, saya ingin terus belajar dan menguasai teknologi modern untuk menjadi Frontend Developer yang handal.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold mb-2 text-white">Hobi</h3>
+        <p class="text-gray-400">
+          Saya suka bermain game di waktu luang untuk refreshing dan melatih strategi.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold mb-2 text-white">Kontak</h3>
+        <div class="flex justify-center space-x-6 mt-4">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/gdananda_/" target="_blank"
+             class="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-600 transition">
+             📸 Instagram
+          </a>
+          <!-- Email -->
+          <a href="mailto:ananda.karunia@student.undiksha.ac.id"
+             class="flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition">
+             📧 Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="p-8 text-center">
+    <h3 class="text-2xl font-semibold mb-4 text-white">Project</h3>
+    <p class="mb-4 text-gray-400">Lihat project interaktif saya di bawah ini 👇</p>
+
+    <!-- Countdown Project -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6">
+      <h4 class="text-xl font-bold text-white mb-2">Countdown Project</h4>
+      <a href="countdown.html" class="bg-gray-700 text-white px-6 py-2 rounded hover:bg-gray-600">Lihat Project</a>
+    </div>
+
+    <!-- Sekat Visual -->
+    <div class="relative my-8">
+      <div class="w-16 h-1 bg-gray-600 mx-auto rounded-full"></div>
+      <p class="text-gray-500 text-sm mt-2">Project Lainnya</p>
+    </div>
+
+    <!-- E-Commerce Project -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+      <h4 class="text-xl font-bold text-white mb-2">E-Commerce Project</h4>
+      <a href="https://marketplace-nantech.vercel.app/" target="_blank"
+         class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-500 flex items-center justify-center gap-2 w-fit mx-auto">
+        🛒 Kunjungi Marketplace
       </a>
     </div>
-  </div>
-</div>
-</section>
+  </section>
 
-
-<!-- Projects -->
-<section id="projects" class="p-8 text-center">
-  <h3 class="text-2xl font-semibold mb-4 text-white">Project</h3>
-  <p class="mb-4 text-gray-400">Lihat project interaktif saya di bawah ini 👇</p>
-
-  <!-- Countdown Project -->
-  <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6">
-    <h4 class="text-xl font-bold text-white mb-2">Countdown Project</h4>
-    <a href="countdown.html" class="bg-gray-700 text-white px-6 py-2 rounded hover:bg-gray-600">Lihat Project</a>
-  </div>
-
-  <!-- Sekat Visual -->
-  <div class="relative my-8">
-    <div class="w-16 h-1 bg-gray-600 mx-auto rounded-full"></div>
-    <p class="text-gray-500 text-sm mt-2">Project Lainnya</p>
-  </div>
-
-  <!-- E-Commerce Project -->
-  <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-    <h4 class="text-xl font-bold text-white mb-2">E-Commerce Project</h4>
-    <a href="https://marketplace-nantech.vercel.app/" target="_blank"
-       class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-500 flex items-center justify-center gap-2 w-fit mx-auto">
-      🛒 Kunjungi Marketplace
-    </a>
-  </div>
-
-</section>
+  <!-- Script untuk Toggle Menu -->
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
+```
